@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mike Tyson's Personal Webpage - Boxing Champion </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- 
+            Assignment 3: Your first website (Explanation)
+
+            - Added display: flow-root to #container so that 
+            it can wrap child elements with float properties
+
+            - Added float:left to #nav_bar so that main content
+            appears to the right of it
+
+            - Added float:left to #main_content so that it appears 
+            next to the #nav_bar container
+
+            - Added float:left to .subcontent because these were stacked 
+            vertically and this made them appear side by side
+
+            -  Added float:left to #advertisements so that it no longer 
+            goes behind the subcontent boxes
+
+            - Adjusted the width of #advertisements to 640px so that it 
+            aligns with the right edge of the last subcontent box 
+            (previously it was 670px)
+
+        -->
+        <div id="container">
+          <div id="header"></div>
+          <div id="nav_bar"></div>
+          <div id="main_content">
+            <div class="subcontent"></div>
+            <div class="subcontent"></div>
+            <div class="subcontent"></div>
+            <div id="advertisements"></div>
+          </div>
+        </div> <!-- End of container -->
+    </body>
+</html>

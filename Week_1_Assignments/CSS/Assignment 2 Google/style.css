@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+.header {
+	border-top: 1px solid #aca899;
+	padding: 20px;
+	max-width: 1509px;
+    margin: 0 auto;
+    width: 100%;
+}
+.logo {
+	display:block;
+	margin: 0 auto;
+	width: 350px;
+}
+.search-area {
+	background: #eee;
+	padding: 5px;
+	height: 85px;
+	max-width: 1509px;
+    margin: 0 auto;
+}
+.search-title {
+	text-align: center;
+}
+.search-box {
+	display: block;
+	margin: 0 auto;
+	width: 266px;
+    height: 22px;
+}
+.buttons {
+	text-align: center;
+	margin-top: 1px;
+}
+.buttons button {
+    min-width: 116px;
+    background-color: #f0f0eb;
+    border: 1px solid #003c74;
+    border-radius: 3px;
+}
+.special-searches {
+    background: #7ee5da;
+    float: left;
+    width: 38.33%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.special-searches ul {
+	list-style:none;
+	text-align:center
+}
+.helpful-links {
+    background: #70ccc2;
+    float: left;
+    width: 23.34%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.helpful-links ul {
+	list-style:none;
+	text-align:center
+}
+.newsletter {
+    background: #7ee5da;
+    float: left;
+    width: 38.33%;
+    height: 80px;
+    text-align: center;
+}
+.newsletter p {
+	font-size: 14px;
+}
+
+.top-footer {
+    max-width: 1509px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+	margin-top: 5px;
+}
+
+.copyright {
+	text-align: center;
+	padding: 25px;
+}
+body{
+	    background-image: url(https://4.bp.blogspot.com/-oGt06oB8nGU/UvPGnA2KR2I/AAAAAAAAA_I/Y-9EwQvaImU/s1600/google_in_1998.png);
+    background-repeat: no-repeat;
+    background-position: 50% -896%;
+}
