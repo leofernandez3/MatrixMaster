@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 5px solid;
+    border-color: #3399d6;
+    padding: 0 15px;
+}
+
+.logo-container {
+    width: 50%;
+}
+
+.logo {
+    max-width: 160px;
+}
+
+.top-links {
+    width: 50%;
+    text-align: right;
+}
+
+.top-links ul {
+    list-style: none;
+}
+
+.top-links ul li {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding: 0 5px;
+}
+
+.top-links ul li:last-child {
+    border-right: 0;
+}
+
+.top-links a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3399d6;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    background-color: #f3f3f3;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 920px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.features {
+    width: 540px;
+    margin-right: 20px;
+}
+
+.signup {
+    width: 315px;
+}
+
+.features h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #33a9d9;
+    margin: 0 0 15px 0;
+    line-height: 1.3;
+}
+
+.features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #989898;
+    font-weight: bold;
+}
+
+
+.signup {
+    border: 1px solid #ccc;
+    padding: 12px 14px;
+    border-radius: 7px;
+}
+
+.signup h2 {
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    background: #5fa9cd;
+    margin: -12px -14px 12px -14px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.signup form {
+    margin: 0;
+}
+
+.signup label {
+    display: inline-block;
+    margin-bottom: 2px;
+    font-weight: bold;
+    width: 90px;
+}
+
+.form-field {
+    padding: 3px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+.continue-button {
+    margin-top: 6px;
+    margin-left: 95px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background: #6fbf2e;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.signin {
+    margin-top: 8px;
+    margin-left: 95px;
+    font-size: 11px;
+}
+
+.signin a {
+    color: #006699;
+    text-decoration: none;
+}
+
+.search h3 {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+    color: #8585a3;
+}
+
+.search {
+    margin-bottom: 8px;
+
+}
+
+.search-field {
+    width: 120px;
+    padding: 3px;
+    margin-right: 6px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+
+.go-button {
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.search p {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+
+.search strong {
+    margin-right: 6px;
+}
+
+.search a {
+    color: #3399d6;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+.search {
+    width: 100%;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.search-form {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    border-top: 5px solid #ccc;
+    font-size: 12px;
+    color: #989898;
+    padding: 30px;
+}
+
+.footer-links {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    border-left: 1px solid #ccc;
+    padding: 0 5px;
+}
+
+.footer-links span {
+    min-width: 75px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer-links a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3399d6;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 12px;
+}
+
+.copyright a {
+    border-left: 1px solid #ccc;
+    padding: 0 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3399d6;
+    text-decoration: none;
+}
+
+.footer-note {
+    margin-top: 4px;
+}
+.footer-note a {
+	color: #3399d6;
+	text-decoration: none; 
+}
