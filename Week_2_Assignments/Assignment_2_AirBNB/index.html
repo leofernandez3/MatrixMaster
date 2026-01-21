@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AirBNB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- 
+		Task: 
+			Build the image above using HTML and CSS.
+			Don't use floats, only display property.
+			Use a fixed width of 1000px.
+			You can use your own pictures or cut them out of the picture above.
+			Spend no more than 3 hours on this assignment and deploy it on Github by Monday 22:00.
+			
+	-->
+	<header class="header">
+		<h1>AirBed &amp; Breakfast &ndash; Find a place to stay. </h1>
+		<ul class="auth-links">
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Sign In</a></li>
+		</ul>
+		<p>This listing is no longer available.</p>
+	</header>
+	<main class="container">
+		<aside class="left-sidebar">
+			<h2>Find a place to stay.</h2>
+			<a href="#">Rent nightly from real people in 830 cities in 73 countries.</a>
+			<form>
+				<input type="text" name="destination" placeholder="Where are you going?">
+				<label for="checkin">Check in</label>
+				<input type="date" name="checkin" id="checkin">
+				<label for="checkout">Check out</label>
+				<input type="date" name="checkout" id="checkout">
+				<label for="guests">Guest</label>
+				<input type="number" step="1" min="1" max="100" name="guests" id="guests" value="1">
+			</form>
+			<div class="promotion">
+				<div class="listing">
+					<h2>San Francisco, CA</h2>
+					<p>Rooms from $29/night</p>
+					<img src="https://placehold.co/200x100" alt="Listing Photo">
+				</div>
+			</div>
+		</aside>
+	
+		<div class="main-listing">
+			<img src="https://placehold.co/400x200" class="hero-image" alt="">
+			<img src="https://placehold.co/65x65" class="thumbnail" alt="">
+			<div>
+				<p><a href="#">"Gabs place"</a> - Amsterdam, Netherlands</p>
+				<p>$85/night</p>
+				<p>1 review</p>
+				<p>&#9666; &#10074;&#10074; &#9656;</p>
+			</div>
+		</div>
+		<div class="suggestions">
+			<div class="listing">
+				<h2>Frances &amp; Greg, Los Angeles</h2>
+				<p>Recently reviewed</p>
+				<img src="https://placehold.co/200x100" alt="Listing Photo">
+			</div>
+			<div class="listing">
+				<h2>Washington DC</h2>
+				<p>From $10/night</p>
+				<img src="https://placehold.co/200x100" alt="Listing Photo">
+			</div>
+			<div class="listing">
+				<h2>Paris, France</h2>
+				<p>Rooms from $20/night</p>
+				<img src="https://placehold.co/200x100" alt="Listing Photo">
+			</div>
+		</div>
+		
+	</main>
+	<footer>
+		<img src="https://placehold.co/650x65" alt="As Seen On">
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">FAQ</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Terms &amp; Privacy</a></li>
+			<li>Biggest Deals: &nbsp;<a href="#">New York</a></li>
+			<li><a href="#">San Francisco</a></li>
+			<li><a href="#">Paris</a></li>
+			<li>Join us on: &nbsp;<a href="#">Twitter</a></li>
+			<li><a href="#">Facebook</a></li>
+		</ul>
+		<div class="copyright">
+			<p>&copy; AirBed &amp; Breakfast, Inc.</p>
+		</div>
+	</footer>
+
+	
+</body>
+</html>

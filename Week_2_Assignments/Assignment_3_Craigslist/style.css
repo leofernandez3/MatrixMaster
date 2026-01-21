@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: serif;
+	background: #eee;
+	color: #000;
+}
+
+.top {
+	width: 1000px;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.top h1 {
+	font-size: 32px;
+	font-weight: bold;
+	background: #ddd;
+	padding: 5px 20px;
+}
+
+.top-dropdown,
+.go-button {
+	font-size: 14px;
+}
+
+.container {
+	width: 1000px;
+	margin: 10px auto;
+	display: flex;
+}
+
+.left-sidebar {
+	width: 230px;
+	background: #ddd;
+	padding: 10px;
+	font-size: 14px;
+	margin-right: 20px;
+}
+nav, .helpful-links {
+	text-align: center;	
+}
+.left-sidebar nav a{
+	font-size: 26px;
+	font-weight: bold;
+	background-color: #eee;
+
+}
+.helpful-links a {
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 5px;
+}
+
+.search {
+	margin: 15px 0;
+	background: #ccc;
+	padding: 5px;
+}
+
+.search h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+
+.search .search-field{
+	width: 100%;
+	margin-bottom: 5px;
+}
+.search .categories{
+	width: 120px;
+	margin-bottom: 5px;
+}
+.search-button {
+	width: 90px;
+	border-radius: 5px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	margin-bottom: 5px;
+}
+
+.updated {
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center
+}
+
+.content {
+	display: flex;
+}
+
+.listing-categories {
+    background: #fff;
+    padding: 10px;
+    width: 230px;
+    margin: 0 10px;
+    padding-bottom: 0;
+}
+.listing-categories h2 {
+	margin: -10px;
+	background: #ddd;
+	padding: 4px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	border-top:20px solid #eee;
+}
+.listing-categories h2:first-child {
+	margin: -10px;
+	background: #ddd;
+	padding: 4px;
+	font-size: 18px;
+	margin-bottom: 5px;
+	border-top: none;
+}
+.listing-categories ul {
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+.listing-categories li {
+	margin-bottom: 4px;
+}

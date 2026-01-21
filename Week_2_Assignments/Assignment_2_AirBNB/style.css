@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+
+}
+
+.header {
+  width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.header h1 {
+  padding: 20px 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.auth-links {
+  list-style: disc;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+.auth-links li {
+  margin-bottom: 4px;
+}
+
+.header p {
+  padding-left: 10px;
+}
+
+.container {
+  width: 1000px;
+  margin: 30px auto;
+  display: flex;
+  
+}
+
+.left-sidebar {
+  width: 25%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;  
+}
+
+.left-sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.left-sidebar a {
+  text-decoration: underline;
+}
+
+.left-sidebar form {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-sidebar input {
+  padding: 4px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.promotion {
+  margin-top: 30px;
+}
+
+.promotion h2 {
+  font-family: Arial;
+  font-size: 14px;
+  color: #ff1493;
+  margin-bottom: 0;
+}
+.promotion p {
+  font-family: Arial;
+  font-size: 11px;
+}
+.main-listing {
+  width: 50%;
+  padding-left: 10px;
+}
+
+.hero-image {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.thumbnail {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.main-listing div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.suggestions {
+  width: 25%;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestions h2 {
+  font-family: Arial;
+  font-size: 14px;
+  color: #ff1493;
+}
+.suggestions p {
+  font-family: Arial;
+  font-size: 11px;
+}
+
+.suggestions img {
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 15px;
+}
+
+footer {
+  width: 1000px;
+  margin: 40px auto 0;
+}
+
+footer img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+footer li {
+  margin-bottom: 4px;
+}
+
+.copyright {
+  margin-top: 20px;
+  padding-left: 15px;
+}
