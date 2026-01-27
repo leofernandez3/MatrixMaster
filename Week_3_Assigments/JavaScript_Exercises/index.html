@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Exercises</title>
+</head>
+<body>
+	<!-- 
+		Create a variable to store your age. Write a conditional statement to check if you are old enough to vote (age >= 18), and log a message accordingly.
+	-->
+	<script>
+		var age = 19;
+		if (age >= 18) {
+			console.log('You can vote!');
+		} else {
+			console.log('Sorry, you cannot vote until the age of 18.');
+		}
+
+	</script>
+	<!-- 
+		Write a program that prompts the user for their name. If the name is "John," log "Hello, John!" to the console; otherwise, log "You are not John."
+	-->
+	<script>
+		var name = prompt('Enter Your Name: ');
+		if (name == "John"){
+			console.log('Hello, ' + name + '!');
+		} else {
+			console.log('You are not John!');
+		}
+	</script>
+	<!-- 
+		Write a function that takes two numbers as parameters and returns their sum. Call the function with different numbers to test it.
+	-->
+	<script type="text/javascript">
+		function sum(a,b){
+			return a + b;
+		}
+		console.log(sum(9,119));
+	</script>
+	<!-- 
+		Create a function that accepts a string as a parameter and returns the string reversed. For example, "hello" should become "olleh."
+	-->
+
+	<script>
+		function reverseString(a) {
+			let reversedString = '';
+			for (let i = a.length - 1; i >= 0; i--) {
+				reversedString += a[i];
+			}	
+			return reversedString;
+		}
+
+		console.log(reverseString('Leo'));
+	</script>	
+	<!-- 
+		Create an array of your favorite fruits. Use a `for` loop to log each fruit to the console.
+	-->
+	<script>
+		function printArray(a){
+			for (let i = a.length -1; i >= 0; i--) {
+				console.log(a[i]);
+			}
+		}
+		var fruits = ["Mangoes","Apples","Oranges", "Grapes"];
+		printArray(fruits);
+
+	</script>
+	<!--
+		Write a function that takes an array of numbers as a parameter and returns the average of those numbers.
+	-->
+	<script>
+		function arrayAverage(a) {
+			let sum = 0;
+			for (let i = a.length - 1; i >= 0; i--) {
+				sum += a[i];
+			}
+			return sum/a.length;
+		}
+		var x = [1,2,3,4,5,6,7,8];
+		console.log(arrayAverage(x));
+	</script>
+	<!-- Given an array of numbers, use a loop to find and log the largest number in the array. -->
+	<script type="text/javascript">
+		function findLargestNumber(numbers) {
+			let a = numbers[0];
+			for (var i = 1; i < numbers.length; i++) {
+				if(numbers[i]>a){
+					a = numbers[i];
+				}
+			}
+			return a;
+		}
+		var numbers = [9,-2,3,4,5,6,7,8];
+		console.log(findLargestNumber(numbers));
+	</script>
+	<!-- 
+		Create an array of words. Use a `for` loop to construct a sentence by concatenating these words and log it to the console.
+	-->
+	<script type="text/javascript">
+	 	function buildSentence(words) {
+		 	let sentence = '';
+		 	for (var i = 0; i < words.length; i++) {
+		 		sentence = sentence.concat(" ", words[i]);
+		 	}	 		
+		 	return sentence.trim();
+	 	}
+	 	var words = ['Hello', 'Everyone!', 'How', 'Are', 'You?'];
+	 	console.log(buildSentence(words));
+	</script>
+	<!--
+		Write a function that takes an array of names and a name as a parameter. The function should check if the given name exists in the array and return true or false.
+	-->
+	<script type="text/javascript">
+	 	function checkName(names, toCheck) {
+	 		let exists = false;
+	 		for (var i = names.length - 1; i >= 0; i--) {
+	 			if(names[i] == toCheck){
+	 				exists = true;
+	 			}
+	 		}
+	 		return exists;
+	 	}
+	 	var names = ["Leo", "John", "Andrew", "Peter", "Samuel"];
+	 	console.log(checkName(names, 'Austin'));
+	</script>
+	<!-- 
+		Create an array of even numbers from 1 to 20 using a `for` loop and the `if` statement. Log the resulting array to the console.
+	-->
+	<script type="text/javascript">
+	 	var evenNumbers = [];
+	 	for (var i = 0; i <= 20; i++) {
+	 		if(i%2 == 0){
+	 			evenNumbers.push(i);
+	 		}
+	 	}
+		console.log(evenNumbers);
+	</script>
+	<!-- 
+	 	Create an object representing a book with properties like title, author, and year. Print the book's details to the console.
+ 	-->
+ 	<script type="text/javascript">
+ 	 	const book = {
+ 	 		title: "New York's Best Seller",
+ 	 		author: 'John Doe',
+ 	 		year: 2026
+ 	 	};
+ 	 	console.log(
+ 	 		book.title,
+ 	 		book.author,
+ 	 		book.year
+ 	 		);
+ 	</script>
+ 	<!--  
+		Define an object to represent a person with properties like name, age, and gender. Create a function that takes a person's object as a parameter and prints a message with their information.
+ 	-->
+ 	<script type="text/javascript">
+ 	 	const person = {
+ 	 		name: "John",
+ 	 		age: 18,
+ 	 		gender: "Male"
+
+ 	 	};
+ 	 	function printObj(obj) {
+ 	 		console.log(obj.name, obj.age, obj.gender);
+ 	 	}
+ 	 	printObj(person);
+ 	</script>
+ 	<!-- 
+ 	 	Create an object that simulates a class representing a car with properties like make, model, and year. Add a method to start the car.
+ 	-->
+ 	<script type="text/javascript">
+ 	 	const car = {
+ 	 		make: "BMW",
+ 	 		model: "x5",
+ 	 		year: 2026,
+
+ 	 		start() {
+ 	 			console.log("Car Started!");
+ 	 		}
+ 	 	};
+ 	 	car.start();
+ 	</script>
+ 	<!-- 
+		Extend the previous car class object with a method to drive the car. Print a message when you start and drive the car instance.
+ 	-->
+ 	<script type="text/javascript">
+ 	 	car.drive = function() {
+ 	 		console.log("Car Driving!");
+ 	 	};
+ 	 	car.drive();
+ 	</script>
+ 	<!-- 
+ 	 	Use the `window.alert` method to display an alert dialog with a message of your choice when a button is clicked on a webpage.
+	-->
+ 	<button id="displayMessage">Display Message</button>
+ 	<script type="text/javascript">
+ 	 	document.querySelector("#displayMessage").addEventListener("click", function(){
+ 	 		alert("Button is clicked!");
+ 	 	});
+ 	</script>
+ 	<!--
+ 	 	Create a function that uses `window.prompt` to ask the user for their name, then use `window.alert` to greet them with their name. 
+ 	-->
+ 	<script type="text/javascript">
+ 	  	//var greetName = prompt("Enter Your Name");
+ 	  	alert(name);
+ 	</script>
+ 	<!--  
+		Create an HTML page with a button and a div element. Write a JavaScript function that changes the text content of the div when the button is clicked.
+ 	-->
+ 	<div id="text" style="border: 1px solid #000; width: 300px; height: 100px; margin:5px; padding: 5px;">
+ 		This text will change when you click the below button.
+ 	</div>
+ 	<button id="changeText">Change Text</button>
+ 	<script>
+ 		document.querySelector("#changeText").addEventListener("click", function(){
+ 			document.querySelector("#text").innerHTML ="The text has been changed!";
+ 		});
+ 	</script>
+ 	<!-- 
+		In an HTML page, create a list of items (e.g., a to-do list) using an unordered list (`<ul>`) and list items (`<li>`). Write JavaScript to add a new item to the list when a button is clicked.
+ 	-->
+ 	<ul id="taskList">
+ 		<li>Task 1</li>
+ 		<li>Task 2</li>
+ 		<li>Task 3</li>
+ 		<li>Task 4</li>
+ 		<li>Task 5</li>
+ 		<li>Task 6</li>
+ 	</ul>
+ 	<button id="addTask">Add Task</button>
+ 	<script type="text/javascript">
+ 		document.querySelector("#addTask").addEventListener("click", function(){
+ 			document.querySelector("#taskList").innerHTML += "<li>Task 7</li>";
+ 		});
+ 	</script>
+ 	<!--  
+		Create a web page with an image and a button. Write JavaScript to change the image source when the button is clicked.
+ 	-->
+ 	<div>
+	 	<img src="https://www.gstatic.com/marketing-cms/assets/images/aa/d2/356851cc4224bc17a230a98e6000/chrome.webp=s48-fcrop64=1,00000000ffffffff-rw" alt="Logo" id="image">
+	 	<button id="changeImage">Change Image</button>
+	</div>
+ 	<script type="text/javascript">
+ 		document.querySelector("#changeImage").addEventListener("click", function(){
+ 			document.querySelector("#image").src = "https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s48-fcrop64=1,00000000ffffffff-rw";
+ 		});
+ 	</script>
+ 	<!--  
+		Build an interactive form in HTML (e.g., a simple login form) with input fields for username and password. Write JavaScript to validate the form when submitted. Display a message based on whether the login was successful or not.
+ 	-->
+	<div>
+	 	<form method="get" action="#" onsubmit="checkForm()">
+	 		<label for="username">Username</label>
+	 		<input type="text" name="username" id="username">
+	 		<label for="password">Password</label>
+	 		<input type="password" name="password" id="password">
+	 		<input type="submit" name="submit" id="submit">
+	 	</form>
+	</div>
+	<script type="text/javascript">
+		function checkForm(event) {
+			if(document.querySelector("#username").value == ""){
+				alert("Username cannot be blank");
+			}
+			if(document.querySelector("#password").value.length < 8){
+				alert("Password must be at least 8 characters long.");
+			}
+			event.preventDefault();
+		}
+	</script>
+</body>
+</html>
