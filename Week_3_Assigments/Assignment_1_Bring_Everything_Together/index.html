@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Bootstrap Website" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<title>Assignment 1 : Bring everything together</title>
+</head>
+<body class="container my-5">
+	<!--
+		Assignment 1 : Bring everything together
+
+		Bring them all together ...
+		After a couple of weeks of working on HTML/CSS and Javascript, I think it's time to bring what we have learned to one place and make a complete project. Remember assignment 2 in the HTML block "Your First website"?
+
+		Go to Trello, download it again, and bring it here to add some magic to it. 
+
+		What do you have to do?
+
+		Add a style to the project using one of the following tools: CSS and ( Bootstrap or Materialize )
+		Use the input fields in order to add data to the table using Javascript ( Don't forget to use the help of Javascript Crash Course at the beginning of this card) 
+		You have to use at least an Event listener, For loop, and Function.
+		Submit it before Thursday 17:00 on GitHub.
+		Facing a problem? Don't forget to ask for help on Slack.
+	--> 
+	<h1 class="text-center mb-4">Web Development is Fun!</h1>
+	<p class="lead">
+		This is a sample paragraph. Lorem ipsum dolor sit amet, consectetur 
+		adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+		magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+		laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+		reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+		deserunt mollit anim id <span class="fw-bold">using span for fun</span> est laborum.
+	</p>
+	<div class="mb-5">
+		<h2 class="mb-3">Populate the table with JavaScript With Predefined Tags</h2>	
+		<table class="table table-bordered table-striped table-hover w-75">
+			<thead class="table-dark" id="tagTable">
+				<tr>
+					<td><strong>Tag</strong></td>
+            		<td><strong>Purpose</strong></td>
+        		</tr>
+			</thead>
+			<tbody id="tagList">
+			</tbody>
+		</table>
+		<button id="tablePopulator">Populate the Table With Preloaded Tags</button>	
+	</div>
+	<div class="mb-5">
+		<h2 class="mb-3">Populate the table with JavaScript with Input Fields</h2>	
+		<table class="table table-bordered table-striped table-hover w-75">
+			<thead class="table-dark">
+				<tr>
+					<td><strong>Tag</strong></td>
+            		<td><strong>Purpose</strong></td>
+        		</tr>
+			</thead>
+			<tbody id="appendTags">
+			</tbody>
+		</table>
+		<form class="border p-3 rounded w-50 mb-4">
+			<div class="mb-3">
+				<label class="form-label">Tag</label>
+				<input type="text" id="tagInput" class="form-control" placeholder="e.g. <p>">
+			</div>
+			<div class="mb-3">
+				<label class="form-label">Purpose</label>
+				<input type="text" id="purposeInput" class="form-control" placeholder="e.g. Paragraph">
+			</div>
+			<button type="button" id="addBtn" class="btn btn-primary" onclick="appendTags()">Add</button>
+		</form>
+	</div>
+	<div class="mb-5">
+		<h2 class="mb-3">Where Ideas Become Websites</h2>	
+		<ul class="list-group">
+			<li class="list-group-item">Code</li>
+			<li class="list-group-item">Create</li>
+			<li class="list-group-item">Repeat</li>
+		</ul>	
+	</div>
+	<div class="mb-5">
+		<h2 class="mb-3">Every Tag Tells A Story</h2>
+		<table class="table table-bordered table-striped table-hover w-75">
+			<thead class="table-dark">
+				<tr>
+					<td><strong>Tag</strong></td>
+            		<td><strong>Purpose</strong></td>
+            		<td><strong>Fun Description</strong></td>
+        		</tr>
+			</thead>
+			<tbody>
+				<tr>
+		            <td>&lt;html&gt;</td>
+		            <td>Root of the page</td>
+		            <td>The magical element that holds everything.</td>
+		        </tr>
+		        <tr>
+		            <td>&lt;head&gt;</td>
+		            <td>Meta info, title</td>
+		            <td>Hold every little technical detail of the page.</td>
+		        </tr>
+		        <tr>
+		            <td>&lt;body&gt;</td>
+		            <td>Content area</td>
+		            <td>The stage where everything is seen.</td>
+		        </tr>
+		        <tr>
+		            <td>&lt;p&gt;</td>
+		            <td>Paragraph</td>
+		            <td>The storyteller of your content, one block at a time.</td>
+		        </tr>
+		        <tr>
+		            <td>&lt;ul&gt; / &lt;li&gt;</td>
+		            <td>Lists</td>
+		            <td>Bullet points for streamlining information.</td>
+		        </tr>
+		        <tr>
+		            <td>&lt;a&gt;</td>
+		            <td>Link</td>
+		            <td>Connects to other fun resources.</td>
+		        </tr>
+		    </tbody>
+		    <tfoot class="table-light">
+				<tr>
+					<td><strong>Tag</strong></td>
+            		<td><strong>Purpose</strong></td>
+            		<td><strong>Fun Description</strong></td>
+        		</tr>
+			</tfoot>
+		</table>	
+	</div>
+	<div class="mb-5">
+		<h2 class="mb-3">An interesting fun form!</h2>
+		<form class="border p-4 rounded shadow-sm">
+      		<label for="username" class="form-label">What's your alias?</label>
+		    <input type="text" name="username" class="form-control mb-3" placeholder="Your name/alias here">
+			<div class="form-check mb-3">
+				<input type="checkbox" name="newsletter" class="form-check-input">
+				<label for="newsletter" class="form-check-label">Yes, I want to receive fun coding tips!</label>
+			</div>
+			<p class="fw-bold">Your Learning Style:</p>
+			<div class="form-check">
+				<input type="radio" name="learning" value="videos" class="form-check-input" />
+				<label class="form-check-label">Visual: I learn by watching videos.</label>
+			</div>
+			<div class="form-check">
+				<input type="radio" name="learning" value="reading" class="form-check-input" />
+				<label class="form-check-label">Practicing: I learn by doing.</label>
+			</div>
+			<div class="form-check mb-3">
+				<input type="radio" name="learning" value="projects" class="form-check-input" />
+				<label class="form-check-label">Reading: I learn by reading tutorials.</label>
+			</div>
+			<p class="fw-bold">Choose your favorite HTML Element:</p>  
+	        <select name="topic" class="form-select mb-4">
+	            <option>Lists</option>
+	            <option>Tables</option>
+	            <option>Forms</option>
+	        </select>
+			<input type="submit" value="Submit" class="btn btn-primary">
+		</form>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function populateTable() {
+			var tags = ["&lt;html&gt;", "&lt;head&gt;", "&lt;body&gt;", "&lt;p&gt;", "&lt;ul&gt; / &lt;li&gt;", "&lt;a&gt;"];
+			var purpose = ["Root of the page", "Meta info, title", "Content area", "Paragraph", "Lists", "Link"];
+			var html = "";
+			for (let i = 0; i < tags.length; i++) {
+				html += "<tr><td>" + tags[i] + "</td><td>" + purpose[i] + "</td></tr>";
+			}
+			document.querySelector("#tagList").innerHTML = html;
+		}
+		document.querySelector("#tablePopulator").addEventListener("click", populateTable);
+		function appendTags() {
+			var tagInput = document.querySelector("#tagInput").value;
+			var purposeInput = document.querySelector("#purposeInput").value;
+			if(tagInput == "" || purposeInput == "") {
+				alert("Fields must have a value.");
+				return;
+			}
+			tagInput = tagInput.replaceAll("<", "&lt;");
+			tagInput = tagInput.replaceAll(">", "&gt;");
+			var tableRow = "";
+			tableRow += "<tr><td>" + tagInput + "</td><td>" + purposeInput + "</td></tr>";
+			document.querySelector("#appendTags").innerHTML += tableRow;
+			document.querySelector("#tagInput").value = "";
+			document.querySelector("#purposeInput").value = "";
+		}
+	</script>
+</body>
+</html>
