@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment - Pomodoro Clock</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<!--  
+	Your assignment is to build a Pomodoro Clock, first of all, what is a Pomodoro Clock? Check this Wikipedia page for a nice description. (You may need to work in a team of two in order to make this assignment)
+
+	Points of interest:
+
+	Objective: Build an app that is functionally similar to this.
+	Fulfill the USER STORIES below. Use whichever libraries or APIs you need. Give it your own personal style.
+	User Story: I can start a 25-minute Pomodoro, and the timer will go off once 25 minutes have elapsed.
+	User Story: I can reset the clock for my next Pomodoro.
+	User Story: I can customize the length of each Pomodoro.
+-->
+	<div class="container">
+		<div class="row mt-5 text-center">
+			<div class="app">
+				<div class="controls">
+					<div class="box">
+						<div class="label">WORK</div>
+						<input type="number" id="work-length" value="25" min="1">
+					</div>
+					<div class="box">
+						<div class="label">BREAK</div>
+						<input type="number" id="break-length" value="5" min="1">
+					</div>
+				</div>
+				<div class="clock-outer d-flex align-items-center">
+					<div class="clock d-flex align-items-center">
+						<div>
+							<p id="time">25:00</p>
+						</div>
+					</div>
+				</div>
+				<div class="buttons mt-5">
+					<button id="start" class="btn btn-success">Start</button>
+					<button id="pause" class="btn btn-warning">Pause</button>
+					<button id="reset" class="btn btn-danger">Reset</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
