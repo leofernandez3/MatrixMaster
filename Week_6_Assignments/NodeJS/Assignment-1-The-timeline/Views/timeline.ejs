@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Assignment 1 - The Timeline</title>
+  </head>
+  <body class="bg-light">
+
+    <div class="container py-5">
+      <h1 class="mb-4 text-center">The Timeline</h1>
+
+      <div class="row g-4">
+        <% posts.forEach(post => { %>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title"><%= post.name %></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%= post.createdAt %></h6>
+                <p class="card-text"><%= post.message %></p>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
