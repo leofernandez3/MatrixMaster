@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container mt-5">
+
+	<a href="/feed">Back</a>
+
+	<h3><%= post.name %></h3>
+
+	<p><%= post.message %></p>
+
+	<small class="text-muted">Posted on: <%= post.createdAt.toLocaleString() %></small>
+
+	<a href="/feed/edit/<%= post.postId %>" class="btn btn-warning">Edit</a>
+
+	<a href="/feed/delete/<%= post.postId %>"  class="btn btn-danger">Delete</a>
+
+</body>
+</html>
