@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Login</h2>
+        <form action="/login" method="POST">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required>
+            <br>
+            <label>Password</label>
+            <input type="password" name="password" class="form-control" required>
+            <br>
+            <button class="btn btn-primary">Login</button>
+        </form>
+        <hr>
+        <h2>Register</h2>
+        <form action="/register" method="POST">
+            <label>First Name</label>
+            <input type="text" name="firstName" class="form-control" required>
+            <br>
+            <label>Last Name</label>
+            <input type="text" name="lastName" class="form-control" required>
+            <br>
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required>
+            <br>
+            <label>Password</label>
+            <input type="password" name="password" class="form-control" required>
+            <br>
+            <label>Confirm Password</label>
+            <input type="password" name="confirmPassword" class="form-control" required>
+            <br>
+            <button class="btn btn-success">Register</button>
+        </form>
+    </div>
+</body>
+</html>
