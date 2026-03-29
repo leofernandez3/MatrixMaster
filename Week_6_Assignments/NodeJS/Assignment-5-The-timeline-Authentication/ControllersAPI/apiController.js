@@ -72,7 +72,7 @@ exports.getAllCommentsPost = async (req, res) => {
   try {
 
     const comments = await Comment.find({
-      postId: req.params.id
+      postId: req.params["id-post"]
     });
 
     res.status(200).json(comments);
