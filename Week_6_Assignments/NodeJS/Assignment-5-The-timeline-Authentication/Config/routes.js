@@ -38,7 +38,8 @@ router.post("/api/create-post", apiController.postOnePost);
 router.put("/api/edit-post/:id", apiController.updateOnePost);
 router.delete("/api/delete-post/:id", apiController.deletePost);
 
-router.get("/api/get-post-comments/:id-post", apiController.getAllCommentsPost);
+//router.get("/api/get-post-comments/:id-post", apiController.getAllCommentsPost);
+router.get("/api/get-post-comments/:id", apiController.getAllCommentsPost);
 router.post("/api/post-post-comment/:id-post", apiController.postOneComment);
 
 module.exports = router;
