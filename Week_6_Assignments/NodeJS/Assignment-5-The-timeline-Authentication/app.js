@@ -1,21 +1,21 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 
 require("./Config/database");
 const routes = require("./Config/routes");
 
 const app = express();
-const PORT = 3000;
 
+app.use(cors()); 
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
-
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-app.set("view engine","ejs");
+app.set("view engine", "ejs");
 
-app.use("/",routes);
+app.use("/", routes);
 
-app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
 });
